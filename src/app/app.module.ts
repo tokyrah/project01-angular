@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
@@ -17,10 +17,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { SubscriptionOrderComponent } from './subscription-order/subscription-order.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SubscriptionOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatRadioModule,
     MatCheckboxModule,
     MatSelectModule,
-    FlexLayoutModule
+    MatCardModule,
+    FlexLayoutModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
