@@ -5,5 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    button {
+        margin: 10px 7px 7px;
+    }
 }
 
